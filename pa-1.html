@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe's Shooping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Shoe's Shooping</h1>
+
+
+  <div id="currencySelector">
+    <label for="currencySelect">Select Currency:</label>
+    <select id="currencySelect">
+      <option value="usd">USD</option>
+      <option value="euro">Euro</option>
+      <option value="inr">INR</option>
+    </select>
+  </div>
+  <div id="filterContainer">
+    <label class="filter-checkbox" for="showAllCheckbox">Show All</label>
+    <input type="checkbox" class="filter-checkbox" id="showAllCheckbox">
+    <label class="filter-checkbox" for="priceFilter0">$0 - $10</label>
+    <input type="checkbox" class="filter-checkbox" id="priceFilter0">
+    <label class="filter-checkbox" for="priceFilter10">$10 - $20</label>
+    <input type="checkbox" class="filter-checkbox" id="priceFilter10">
+    <label class="filter-checkbox" for="priceFilter20">$20 - $30</label>
+    <input type="checkbox" class="filter-checkbox" id="priceFilter20">
+  </div>
+
+  <div id="products">
+
+    <div class="product">
+      <img id="s1" src="1.jpg" alt="Product">
+      <p data-currency="usd">10.99</p>
+    </div>
+    <div class="product">
+      <img id="s2" src="2.jpg" alt="Product">
+      <p data-currency="usd">24.99</p>
+    </div>
+    <div class="product">
+      <img id="s3" src="3.jpg" alt="Product">
+      <p data-currency="usd">19.99</p>
+    </div>
+    <div class="product">
+      <img id="s4" src="4.jpg" alt="Product">
+      <p data-currency="usd">14.99</p>
+    </div>
+    <div class="product">
+      <img id="s5" src="5.jpg" alt="Product">
+      <p data-currency="usd">29.99</p>
+    </div>
+    <div class="product">
+      <img id="s6" src="6.jpg" alt="Product">
+      <p data-currency="usd">9.99</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
